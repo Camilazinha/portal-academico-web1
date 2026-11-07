@@ -36,7 +36,8 @@ header {
   color: #fff;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: #ffd0c8;
 }
 
@@ -88,118 +89,41 @@ input:not(:placeholder-shown):invalid {
 }
 
 /* =================================
-   CSS de Financeiro
-================================= */
-
-body {
-    font-family: Roboto, sans-serif;
-}
-
-/* =================================
-   PARÁGRAFOS
-================================= */
-
-p {
-    color: #000000;
-    font-size: 20px;
-}
-
-/* =================================
    TÍTULOS
 ================================= */
 
-h2,
-h3 {
-    color: #800000;
-}
-
-/* =================================
-   CABEÇALHO
-================================= */
-
-.cabecalho {
-    background-color: #800000;
-}
-
-.cabecalho h1,
-.cabecalho p,
-.cabecalho strong,
-.cabecalho .status-aluno {
-    color: white;
-}
-
-/* =================================
-   MENU DE NAVEGAÇÃO
-================================= */
-
-.menu-principal {
-    background-color: #7b0000;
-}
-
-.menu-principal .nav-link {
-    color: black;
-}
-
-.menu-principal .nav-link.active {
-    background-color: #590303;
-    color: white;
-}
-
-/* =================================
-   TABELAS
-================================= */
-
 table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    margin: 0;
-    border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0;
+  border: 1px solid black;
 }
 
 table th,
 table td {
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 16px;
-    text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
 }
 
 table tr {
-    height: 50px;
+  height: 50px;
 }
 
 /* CABEÇALHO DAS TABELAS */
 
 table th {
-    background-color: #800000;
-    color: white;
+  background-color: #800000;
+  color: white;
 }
 
 /* RODAPÉ DAS TABELAS */
 
 table tfoot td {
-    background-color: #800000;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-}
-
-/* =================================
-   RODAPÉ DO SITE
-================================= */
-
-.contato section {
-    background-color: #f5f5f5;
-    border: 1px solid black;
-}
-
-.contato table {
-    width: 100%;
-    background-color: #7b0000;
-}
-
-.contato table p,
-.contato .nomes-equipe {
-    color: white;
+  background-color: #800000;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
 }

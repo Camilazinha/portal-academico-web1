@@ -11,69 +11,65 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         .cabecalho {
-        border-bottom: 4px solid #ff0000; 
+            border-bottom: 4px solid #ff0000;
         }
     </style>
 </head>
 
 <body>
 
-    <header class="cabecalho">
-        <div class="container py-3 d-flex justify-content-between align-items-center flex-wrap gap-3">
+    <header>
+        <div class="mx-5 py-4 d-flex justify-content-between align-items-center flex-wrap">
 
             <div>
-                <h1>Portal do Aluno</h1>
-                <p>Seu espaço acadêmico em um só lugar.</p>
+                <h1 class="fw-semibold fs-3">Portal do Aluno</h1>
+                <p class="mb-3 mb-sm-0">Seu espaço acadêmico em um só lugar.</p>
             </div>
 
-            <div class="perfil-aluno d-flex align-items-center gap-3">
-                <div class="icone-perfil">
-                    <i class="bi bi-person-fill"></i>
-                </div>
+            <div class="perfil-estudante d-flex flex-wrap align-items-center gap-2">
+                <img src="img/estudante.jpg" alt="Foto de perfil" class="foto-perfil">
 
-                <div>
+                <div class="d-flex flex-wrap flex-column">
                     <strong>Juliana Freitas</strong>
-                    <p class="status-aluno mb-0">● Aluno logado</p>
+                    <small>RA: 10234765</small>
                 </div>
             </div>
+        </div>
 
+        <hr class="m-0">
+
+        <nav class="py-2" aria-label="Navegação principal">
+            <ul class="nav justify-content-center nav-underline flex-wrap gap-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="grade-curricular.html">Grade Curricular</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="notas.html">Notas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="faltas.html" aria-current="page">Faltas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="financeiro.html">Financeiro</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="fale-conosco.html">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
         </div>
     </header>
 
 
-
-    <!-- MENU DE NAVEGAÇÃO -->
-    <nav class="menu-principal" class="container py-3" aria-label="Navegação principal">
-        <ul class="nav nav-pills justify-content-center flex-wrap gap-2">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html" aria-current="page">Home</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="grade-curricular.html">Grade Curricular</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="notas.html">Notas</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="faltas.html">Faltas</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="financeiro.html">Financeiro</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="fale-conosco.html">Fale Conosco</a>
-            </li>
-        </ul>
-    </nav>
-
-
     <br><br>
-
 
 
     <main>
@@ -205,66 +201,47 @@
 
     </main>
 
+    <footer class="p-5 pb-3">
 
+        <div class="row border-bottom pb-4 justify-content-between">
 
+            <div class="col-12 col-lg-4">
+                <h4 class="fs-6 fw-bold titulo-footer">Contato</h4>
+                <ul>
+                    <li class="link-footer">Para mais informações:<a href="https://www.mackenzie.br/" target="_blank">
+                            https://www.mackenzie.br/</a>
+                    </li>
+                    <li class="link-footer">Envie e-mail para a instituição: <a
+                            href="mailto:cps@mackenzie.br">cps@mackenzie.br</a>
+                    </li>
+                    <li class="link-footer">Ligue para a instituição: <a href="tel:+55113555-2181">(11) 3555-2181 </a>
+                    </li>
+                </ul>
+            </div>
 
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
+            <div class="col-12 col-lg-4">
+                <h4 class="fs-6 fw-bold titulo-footer">Integrantes</h4>
+                <ul>
+                    <li class="link-footer">Camila de Paula</li>
+                    <li class="link-footer">Eloiza Almeida</li>
+                    <li class="link-footer">Giovanna Santana</li>
+                    <li class="link-footer">Isabella Queiroz</li>
+                    <li class="link-footer">Lavínia Gimenes</li>
+                    <li class="link-footer">Maria Eduarda Ferreira</li>
+                </ul>
+            </div>
 
+        </div>
 
-
-
-
-
-
-
-    <!-- lINKS -->
-    <footer class="contato">
-        <br>
-
-        <h3> Portal do Aluno - Sistema Acadêmico</h3>
-
-        <p><a href="https://www.mackenzie.br/" target="_blank">Entrar no nosso site para mais informações</a></p>
-        <p><a href="mailto:cps@mackenzie.br">Enviar e-mail</a></p>
-        <p><a href="tel:+55113555-2181">Ligar para a organização</a></p>
-
-
-        <hr>
-
-
-        <table width="100%">
-            <tr>
-                <td>
-                    <p><b>Copyright © 2026 - Portal do Aluno</b></p>
-                    <p>Todos os direitos reservados.</p>
-                </td>
-
-                <td align="right">
-                    <p><b>Desenvolvido por:</b></p>
-                    <br>
-                    Lavínia Gimenes
-                    <br>
-                    Isabella Queiroz Freitas
-                    <br>
-                    Eloiza Almeida
-                    <br>
-                    Maria Eduarda Ferreira
-                    <br>
-                    Giovanna Santana
-                </td>
-            </tr>
-        </table>
-
+        <div class="copyright-footer mt-4">
+            <p>Copyright © 2026 - Portal do Aluno</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
 
 </body>
 
