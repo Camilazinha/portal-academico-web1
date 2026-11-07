@@ -11,6 +11,10 @@ body {
   font-family: "Roboto", "Arial", "Times New Roman", serif;
 }
 
+header p {
+  margin: 0;
+}
+
 .btn-botao {
   background-color: #7b0000;
   color: #fff;
@@ -28,18 +32,40 @@ header {
   border-bottom-color: #fff;
 }
 
-.foto-perfil {
-  vertical-align: middle;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.nav-link {
+  color: #fff;
 }
 
+.nav-link:hover {
+  color: #ffd0c8;
+}
+
+.foto-perfil {
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
 /* RODAPÉ */
 
 footer {
   background-color: #7b0000;
   color: #fff;
+}
+
+.link-footer a {
+  color: #fff;
+}
+
+.link-footer a:hover {
+  color: #ffd0c8;
+}
+
+.copyright-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 /* TELA - FALE CONOSCO */
