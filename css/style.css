@@ -127,3 +127,10 @@ table tfoot td {
   padding: 10px;
   font-size: 20px;
 }
+
+ .descricao-formulario
+ {
+
+    text-align:center;
+    font-size: 17px;
+ }
