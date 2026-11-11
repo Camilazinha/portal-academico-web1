@@ -92,7 +92,6 @@ input:not(:placeholder-shown):valid {
   border-color: #26680b;
 }
 
-
 /* =================================
    TÍTULOS
 ================================= */
@@ -130,19 +129,17 @@ table tfoot td {
   background-color: #800000;
   color: white;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
- .descricao-formulario
- {
-
-    text-align:center;
-    font-size: 17px;
- }
+.descricao-formulario {
+  text-align: center;
+  font-size: 17px;
+}
 
 .btn-botao:hover {
-    background-color: #a60d0d;
-    color: #ffffff;
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #a60d0d;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
