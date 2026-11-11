@@ -88,6 +88,11 @@ input:not(:placeholder-shown):invalid {
   background: #fff5f5;
 }
 
+input:not(:placeholder-shown):valid {
+  border-color: #26680b;
+}
+
+
 /* =================================
    TÍTULOS
 ================================= */
@@ -134,3 +139,10 @@ table tfoot td {
     text-align:center;
     font-size: 17px;
  }
+
+.btn-botao:hover {
+    background-color: #a60d0d;
+    color: #ffffff;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
