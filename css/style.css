@@ -156,7 +156,6 @@ input:not(:placeholder-shown):invalid {
 
 input:not(:placeholder-shown):valid {
   border-color: #26680b;
-=======
   background-color: #a60d0d;
   color: #ffffff;
   transform: scale(1.05);
@@ -234,6 +233,4 @@ input:not(:placeholder-shown):valid {
         padding: 15px;
         margin: 15px auto;
     }
-
->>>>>>> 074094b13b042e42e348a4534c0f5b5ddf8a31f1
 }
