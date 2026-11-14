@@ -294,3 +294,59 @@ faltas h2,
     margin-bottom: 15px;
     border: 1px solid #ccc;
 }
+
+/* =========================================
+   NOTAS
+========================================= */
+
+.tabela-notas  {
+    background-color: #fff;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+notas h2,
+.resumo-notas h2,
+.resumo-notas h3 {
+    color: #760000;
+}
+
+.resumo-notas {
+    margin: 30px;
+    padding: 15px;
+}
+/* Artigos das orientações */
+
+.resumo-notas article {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.notas h2,
+.tabela-notas h2,
+.tabela-notas h3 {
+    color: #760000;
+}
+
+.notas h2,
+.orientacoes h2,
+.orientacoes h4, {
+    color: #760000;
+}
+
+.orientacoes {
+    margin: 30px;
+    padding: 15px;
+}
+/* Artigos das orientações */
+
+.orientacoes article {
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
