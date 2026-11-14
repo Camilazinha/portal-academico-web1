@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notas - Portal do Aluno</title>
+    <title>Faltas - Portal do Aluno</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .cabecalho {
+            border-bottom: 4px solid #ff0000;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,11 +49,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="notas.html" aria-current="page">Notas</a>
+                    <a class="nav-link" href="notas.html">Notas</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="faltas.html">Faltas</a>
+                    <a class="nav-link active" href="faltas.html" aria-current="page">Faltas</a>
                 </li>
 
                 <li class="nav-item">
@@ -65,127 +70,132 @@
 
     <main class="container py-5">
 
-        <section class="resumo-notas">
-            <h2>Meu desempenho acadêmico</h2>
+        <section class="resumo-frequencia text-center">
+
+            <h2>Resumo da frequência</h2>
 
             <p>
-                Nesta página, você pode consultar suas notas nas avaliações,
-                acompanhar suas médias e verificar sua situação em cada disciplina.
+                Nesta página, você pode acompanhar sua frequência acadêmica,
+                consultar as faltas registradas e verificar sua presença
+                nas disciplinas do semestre.
             </p>
 
             <article>
-                <h3>Como funciona a avaliação?</h3>
+                <h3 class="text-center">Por que acompanhar minha frequência?</h3>
+
                 <p>
-                    As notas são utilizadas para acompanhar seu aprendizado
-                    durante o semestre. Consulte os critérios de avaliação
-                    definidos pelos professores de cada disciplina.
+                    A frequência é importante para acompanhar sua participação
+                    nas aulas e verificar se você está cumprindo os requisitos
+                    de presença estabelecidos pela instituição.
                 </p>
             </article>
         </section>
 
-        <section class="tabela-notas">
-            <h2>Notas por disciplina</h2>
+        <section class="tabela-faltas text-center my-4">
+            <h2>Faltas por disciplina</h2>
 
             <p>
-                Confira abaixo suas notas nas avaliações e a média parcial
-                de cada matéria.
+                Confira a quantidade de aulas realizadas, suas faltas
+                registradas e o percentual de frequência em cada matéria.
             </p>
 
             <table>
-                <caption>Boletim acadêmico - semestre atual</caption>
+                <caption>Relatório de frequência - semestre atual</caption>
 
                 <thead>
                     <tr>
                         <th scope="col">Disciplina</th>
-                        <th scope="col">Nota 1</th>
-                        <th scope="col">Nota 2</th>
-                        <th scope="col">Trabalho</th>
-                        <th scope="col">Média parcial</th>
-                        <th scope="col">Situação</th>
+                        <th scope="col">Aulas realizadas</th>
+                        <th scope="col">Presenças</th>
+                        <th scope="col">Faltas</th>
+                        <th scope="col">Frequência</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
                         <th scope="row">Fundamentos de Sistemas de Informação</th>
-                        <td>8,0</td>
-                        <td>7,5</td>
-                        <td>9,0</td>
-                        <td>8,2</td>
-                        <td>Em andamento</td>
+                        <td>40</td>
+                        <td>38</td>
+                        <td>2</td>
+                        <td>95%</td>
                     </tr>
 
                     <tr>
                         <th scope="row">Desenvolvimento Web I</th>
-                        <td>9,0</td>
-                        <td>8,5</td>
-                        <td>9,5</td>
-                        <td>9,0</td>
-                        <td>Em andamento</td>
+                        <td>40</td>
+                        <td>36</td>
+                        <td>4</td>
+                        <td>90%</td>
                     </tr>
 
                     <tr>
                         <th scope="row">Banco de Dados</th>
-                        <td>7,0</td>
-                        <td>8,0</td>
-                        <td>8,5</td>
-                        <td>7,8</td>
-                        <td>Em andamento</td>
+                        <td>36</td>
+                        <td>32</td>
+                        <td>4</td>
+                        <td>88,9%</td>
                     </tr>
 
                     <tr>
                         <th scope="row">Engenharia de Software</th>
-                        <td>6,5</td>
-                        <td>7,0</td>
-                        <td>8,0</td>
-                        <td>7,2</td>
-                        <td>Em andamento</td>
+                        <td>36</td>
+                        <td>35</td>
+                        <td>1</td>
+                        <td>97,2%</td>
                     </tr>
 
                     <tr>
                         <th scope="row">Redes de Computadores</th>
-                        <td>8,5</td>
-                        <td>9,0</td>
-                        <td>8,0</td>
-                        <td>8,5</td>
-                        <td>Em andamento</td>
+                        <td>40</td>
+                        <td>34</td>
+                        <td>6</td>
+                        <td>85%</td>
                     </tr>
                 </tbody>
 
                 <tfoot>
                     <tr>
-                        <td colspan="6">
-                            As notas apresentadas são fictícias e servem apenas
-                            como exemplo para o projeto acadêmico.
+                        <td colspan="5">
+                            Os dados apresentados são fictícios e servem
+                            apenas como exemplo para o projeto acadêmico.
                         </td>
                     </tr>
                 </tfoot>
             </table>
         </section>
 
-        <section class="orientacoes">
-            <h2>Orientações acadêmicas</h2>
+        <section class="orientacoes-frequencia">
+            <h2>Orientações sobre faltas</h2>
 
             <article>
-                <h3>Acompanhe suas notas</h3>
+                <h4>Consulte sua frequência regularmente</h4>
+
                 <p>
-                    Consulte o boletim regularmente para acompanhar seu
-                    desempenho ao longo do semestre.
+                    Verifique suas faltas ao longo do semestre para acompanhar
+                    sua situação em cada disciplina e evitar surpresas no
+                    fechamento do período letivo.
                 </p>
             </article>
 
             <article>
-                <h3>Ficou com alguma dúvida?</h3>
+                <h4>Precisa justificar uma falta?</h4>
+
                 <p>
-                    Se precisar de esclarecimentos sobre uma nota, entre em
-                    contato com o professor responsável ou acesse a página
-                    <a href="fale-conosco.html">Fale Conosco</a>.
+                    Consulte as regras da instituição sobre justificativas
+                    e documentação necessária. Se tiver dúvidas, entre em
+                    contato com a equipe responsável pelo portal.
+                </p>
+
+                <p>
+                    Acesse a página
+                    <a href="fale-conosco.html">Fale Conosco</a>
+                    para enviar sua dúvida.
                 </p>
             </article>
         </section>
 
     </main>
-
 
     <footer class="p-5 pb-3">
 

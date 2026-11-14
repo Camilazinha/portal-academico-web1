@@ -234,3 +234,21 @@ input:not(:placeholder-shown):valid {
         margin: 15px auto;
     }
 }
+
+/* =========================================
+   FALTAS
+========================================= */
+
+.fatas {
+    background-color: #fff;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.faltas h2,
+.orientacoes-frequencia h2,
+.orientacoes-frequencia h3 {
+    color: #760000;
+}
