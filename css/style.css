@@ -239,7 +239,7 @@ input:not(:placeholder-shown):valid {
    FALTAS
 ========================================= */
 
-.fatas {
+.tabela-faltas text-center my-4tabela-faltas text-center my-4 {
     background-color: #fff;
     width: 90%;
     margin: 30px auto;
@@ -251,4 +251,14 @@ input:not(:placeholder-shown):valid {
 .orientacoes-frequencia h2,
 .orientacoes-frequencia h3 {
     color: #760000;
+}
+
+/* Linhas da tabela */
+
+.orientacoes-frequencia tbody tr {
+    background-color: #f5f5f5;
+}
+
+.orientacoes-frequencia tbody tr:hover {
+    background-color: #fff;
 }
