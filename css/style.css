@@ -334,7 +334,7 @@ notas h2,
 
 .notas h2,
 .orientacoes h2,
-.orientacoes h4, {
+.orientacoes h4 {
     color: #760000;
 }
 
@@ -342,6 +342,7 @@ notas h2,
     margin: 30px;
     padding: 15px;
 }
+
 /* Artigos das orientações */
 
 .orientacoes article {
