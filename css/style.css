@@ -239,12 +239,18 @@ input:not(:placeholder-shown):valid {
    FALTAS
 ========================================= */
 
-.tabela-faltas text-center my-4tabela-faltas text-center my-4 {
+.tabela-faltas  {
     background-color: #fff;
     width: 90%;
     margin: 30px auto;
     padding: 20px;
     border: 1px solid #ccc;
+}
+
+.faltas h2,
+.tabela-faltas h2,
+.tabela-faltas h3 {
+    color: #760000;
 }
 
 .faltas h2,
