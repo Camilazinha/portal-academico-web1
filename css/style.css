@@ -239,6 +239,10 @@ input:not(:placeholder-shown):valid {
    FALTAS
 ========================================= */
 
+header {
+    margin-bottom: 0;
+}
+
 .tabela-faltas  {
     background-color: #fff;
     width: 90%;
@@ -274,7 +278,7 @@ faltas h2,
 
 .faltas h2,
 .orientacoes-frequencia h2,
-.orientacoes-frequencia h3 {
+.orientacoes-frequencia h4 {
     color: #760000;
 }
 
