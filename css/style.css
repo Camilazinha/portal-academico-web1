@@ -239,8 +239,8 @@ input:not(:placeholder-shown):valid {
    FALTAS
 ========================================= */
 
-header {
-    margin-bottom: 0;
+.body, h1, h2, h3, p {
+    margin-top: 0;
 }
 
 .tabela-faltas  {
