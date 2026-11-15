@@ -9,11 +9,6 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .cabecalho {
-            border-bottom: 4px solid #ff0000;
-        }
-    </style>
 </head>
 
 <body>
@@ -68,11 +63,10 @@
         </div>
     </header>
 
-    <main class="container py-5">
+    <main class="container py-5 px-0">
 
-        <section class="resumo-frequencia text-align: left">
-
-            <h2>Resumo da frequência</h2>
+        <section class="resumo-frequencia p-4 pb-2 my-4 border rounded-3">
+            <h3 class="fw-semibold">Resumo da frequência</h3>
 
             <p>
                 Nesta página, você pode acompanhar sua frequência acadêmica,
@@ -80,8 +74,8 @@
                 nas disciplinas do semestre.
             </p>
 
-            <article>
-                <h3 class="text-align: right">Por que acompanhar minha frequência?</h3>
+            <article class="bg-light p-3 border rounded-3 mb-3">
+                <h4>Por que acompanhar minha frequência?</h4>
 
                 <p>
                     A frequência é importante para acompanhar sua participação
@@ -91,17 +85,15 @@
             </article>
         </section>
 
-        <section class="tabela-faltas text-align: left">
-            <h2>Faltas Por Disciplina</h2>
+        <section class="tabela-faltas p-4 pb-2 my-4 border rounded-3">
+            <h2 class="fw-semibold">Faltas por disciplina</h2>
 
             <p>
                 Confira a quantidade de aulas realizadas, suas faltas
                 registradas e o percentual de frequência em cada matéria.
             </p>
 
-            <table>
-                <caption>Relatório de frequência - semestre atual</caption>
-
+            <table border="1">
                 <thead>
                     <tr>
                         <th scope="col">Disciplina</th>
@@ -162,13 +154,15 @@
                         </td>
                     </tr>
                 </tfoot>
+                <caption class="text-muted text-center">Relatório de frequência - semestre atual</caption>
+
             </table>
         </section>
 
-        <section class="orientacoes-frequencia">
-            <h2>Orientações sobre faltas</h2>
+        <section class="orientacoes-frequencia mt-5 mb-3 p-4 d-flex gap-3 flex-column border rounded-3">
+            <h3 class="fw-semibold">Orientações sobre faltas</h3>
 
-            <article>
+            <article class="bg-light p-3 border rounded-3">
                 <h4>Consulte sua frequência regularmente</h4>
 
                 <p>
@@ -178,7 +172,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="bg-light p-3 border rounded-3">
                 <h4>Precisa justificar uma falta?</h4>
 
                 <p>
@@ -187,13 +181,11 @@
                     contato com a equipe responsável pelo portal.
                 </p>
 
-                <ul>
-                    <li>
-                        Acesse a página
-                    <a href="fale-conosco.html">Fale Conosco</a>
+                <p>
+                    Acesse a página
+                    <a class="link-orientacoes" href="fale-conosco.html">Fale Conosco</a>
                     para enviar sua dúvida.
-                    </li>
-                </ul>
+                </p>
             </article>
         </section>
 

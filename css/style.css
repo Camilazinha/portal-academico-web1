@@ -1,44 +1,49 @@
-/* CORES PARA USAR NO CSS
-    branco: #fff;
-    vermelho: #7b0000;
-    cinza: #f5f5f5;
-    preto: #1a1a1a;
-} */
+/* =========================================
+   CORES DE REFERÊNCIA
+========================================= */
+:root {
+  --branco: #fff;
+  --vermelho: #7b0000;
+  --vermelho-titulo: #760000;
+  --vermelho-destaque: #c00000;
+  --vermelho-hover: #a60d0d;
+  --verde-valido: #26680b;
+  --cinza: #f5f5f5;
+  --preto: #1a1a1a;
+  --rosa-claro: #ffd0c8;
+}
 
-/* GERAL */
-
+/* =========================================
+   GERAL
+========================================= */
 body {
-  font-family: "Roboto", "Arial", "Times New Roman", serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 header p {
   margin: 0;
 }
 
-.btn-botao {
-  background-color: #7b0000;
-  color: #fff;
-}
-
-/* CABEÇALHO */
-
+/* =========================================
+   CABEÇALHO
+========================================= */
 header {
-  background-color: #7b0000;
-  color: #fff;
-}
-
-.nav-underline .nav-link.active {
-  color: #fff;
-  border-bottom-color: #fff;
+  background-color: var(--vermelho);
+  color: var(--branco);
 }
 
 .nav-link {
-  color: #fff;
+  color: var(--branco);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #ffd0c8;
+  color: var(--rosa-claro);
+}
+
+.nav-underline .nav-link.active {
+  color: var(--branco);
+  border-bottom-color: var(--branco);
 }
 
 .foto-perfil {
@@ -47,19 +52,21 @@ header {
   height: 45px;
   border-radius: 50%;
 }
-/* RODAPÉ */
 
+/* =========================================
+   RODAPÉ
+========================================= */
 footer {
-  background-color: #7b0000;
-  color: #fff;
+  background-color: var(--vermelho);
+  color: var(--branco);
 }
 
 .link-footer a {
-  color: #fff;
+  color: var(--branco);
 }
 
 .link-footer a:hover {
-  color: #ffd0c8;
+  color: var(--rosa-claro);
 }
 
 .copyright-footer {
@@ -69,43 +76,66 @@ footer {
   gap: 8px;
 }
 
-/* TELA - FALE CONOSCO */
-
-.informacoes-contato {
-  text-align: center;
+/* =========================================
+   BOTÕES
+========================================= */
+.btn-botao {
+  background-color: var(--vermelho);
+  color: var(--branco);
+  transition:
+    background-color 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
+.btn-botao:hover {
+  background-color: var(--vermelho-hover);
+  color: var(--branco);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   FORMULÁRIOS (FALE CONOSCO)
+========================================= */
+.informacoes-contato,
 .descricao-formulario {
   text-align: center;
 }
 
+.descricao-formulario {
+  font-size: 17px;
+}
+
+.form-control:focus,
 .formulario-contato input:focus-visible {
-  outline: 3px solid #c00000;
+  outline: 3px solid var(--vermelho-destaque);
   outline-offset: 2px;
 }
+
 input:not(:placeholder-shown):invalid {
-  border-color: #c00000;
+  border-color: var(--vermelho-destaque);
   background: #fff5f5;
 }
 
 input:not(:placeholder-shown):valid {
-  border-color: #26680b;
+  border-color: var(--verde-valido);
 }
-/* =================================
-   TÍTULOS
-================================= */
 
+/* =========================================
+   TABELAS
+========================================= */
 table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
   margin: 0;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 table th,
 table td {
-  border: 1px solid black;
+  border: 1px solid #000;
   padding: 10px;
   font-size: 16px;
   text-align: center;
@@ -115,239 +145,40 @@ table tr {
   height: 50px;
 }
 
-/* CABEÇALHO DAS TABELAS */
-
 table th {
-  background-color: #800000;
-  color: white;
+  background-color: var(--vermelho);
+  color: var(--branco);
 }
-
-/* RODAPÉ DAS TABELAS */
 
 table tfoot td {
-  background-color: #800000;
-  color: white;
+  background-color: var(--vermelho);
+  color: var(--branco);
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
- .descricao-formulario
- {
-
-    text-align:center;
-    font-size: 17px;
- }
-
-.btn-botao:hover {
-    background-color: #a60d0d;
-    color: #ffffff;
-    transform: scale(1.05); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.form-control:focus {
-  outline: 3px solid #c00000;
-  outline-offset: 2px;
-}
-input:not(:placeholder-shown):invalid {
-  border-color: #c00000;
-  background: #fff5f5;
-}
-
-input:not(:placeholder-shown):valid {
-  border-color: #26680b;
-  background-color: #a60d0d;
-  color: #ffffff;
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
-/* =========================================
-   GRADE CURRICULAR
-========================================= */
-
-.grade-curricular {
-    background-color: #fff;
-    width: 90%;
-    margin: 30px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-.grade-curricular h2,
-.orientacoes-grade h2,
-.orientacoes-grade h3 {
-    color: #760000;
-}
-
-/* Legenda da tabela */
-
-.grade-curricular caption {
-    color: #760000;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Linhas da tabela */
-
+/* Tabela de grade curricular */
 .grade-curricular tbody tr {
-    background-color: #f5f5f5;
+  background-color: var(--cinza);
 }
 
 .grade-curricular tbody tr:hover {
-    background-color: #fff;
-}
-
-
-/* =========================================
-   ORIENTAÇÕES ACADÊMICAS
-========================================= */
-
-.orientacoes-grade {
-    margin: 30px;
-    padding: 15px;
-}
-
-/* Artigos das orientações */
-
-.orientacoes-grade article {
-    background-color: #f5f5f5;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-}
-
-
-/* =========================================
-   RESPONSIVIDADE
-========================================= */
-
-@media (max-width: 768px) {
-
-    .grade-curricular,
-    .orientacoes-grade {
-        width: 95%;
-        padding: 15px;
-        margin: 15px auto;
-    }
+  background-color: var(--branco);
 }
 
 /* =========================================
-   FALTAS
+   ORIENTAÇÕES
 ========================================= */
 
-.body, h1, h2, h3, p {
-    margin-top: 0;
+.link-orientacoes {
+  color: var(--vermelho);
 }
 
-.tabela-faltas  {
-    background-color: #fff;
-    width: 90%;
-    margin: 30px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+.link-orientacoes li::marker,
+.link-orientacoes li a {
+  color: var(--vermelho);
 }
 
-faltas h2,
-.resumo-frequencia h2,
-.resumo-frequencia h3 {
-    color: #760000;
-}
-
-.resumo-frequencia {
-    margin: 30px;
-    padding: 15px;
-}
-/* Artigos das orientações */
-
-.resumo-frequencia article {
-    background-color: #f5f5f5;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-}
-
-.faltas h2,
-.tabela-faltas h2,
-.tabela-faltas h3 {
-    color: #760000;
-}
-
-.faltas h2,
-.orientacoes-frequencia h2,
-.orientacoes-frequencia h4 {
-    color: #760000;
-}
-
-.orientacoes-frequencia {
-    margin: 30px;
-    padding: 15px;
-}
-/* Artigos das orientações */
-
-.orientacoes-frequencia article {
-    background-color: #f5f5f5;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-}
-
-/* =========================================
-   NOTAS
-========================================= */
-
-.tabela-notas  {
-    background-color: #fff;
-    width: 90%;
-    margin: 30px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-notas h2,
-.resumo-notas h2,
-.resumo-notas h3 {
-    color: #760000;
-}
-
-.resumo-notas {
-    margin: 30px;
-    padding: 15px;
-}
-/* Artigos das orientações */
-
-.resumo-notas article {
-    background-color: #f5f5f5;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-}
-
-.notas h2,
-.tabela-notas h2,
-.tabela-notas h3 {
-    color: #760000;
-}
-
-.notas h2,
-.orientacoes h2,
-.orientacoes h4 {
-    color: #760000;
-}
-
-.orientacoes {
-    margin: 30px;
-    padding: 15px;
-}
-
-/* Artigos das orientações */
-
-.orientacoes article {
-    background-color: #f5f5f5;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+.link-orientacoes:hover {
+  color: #c21d1d;
 }

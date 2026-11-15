@@ -63,9 +63,10 @@
         </div>
     </header>
 
-    <main class="container py-5">
-        <section class="grade-curricular">
-            <h2>Minha Grade Curricular</h2>
+    <main class="container py-5 px-0">
+
+        <section class="grade-curricular p-4 pb-2 my-4 border rounded-3">
+            <h2 class="fw-semibold">Minha Grade Curricular</h2>
 
             <p>
                 Confira os horários das aulas, as disciplinas,
@@ -73,7 +74,6 @@
             </p>
 
             <table border="1">
-                <caption>Horários das aulas - 1º semestre</caption>
 
                 <thead>
                     <tr>
@@ -169,14 +169,16 @@
                         </td>
                     </tr>
                 </tfoot>
+                <caption class="text-muted text-center">Horários das aulas - 1º semestre</caption>
+
             </table>
         </section>
 
-        <section class="orientacoes-grade">
-            <h2>Orientações acadêmicas</h2>
+        <section class="orientacoes-grade mt-5 mb-3 p-4 d-flex gap-3 flex-column border rounded-3">
+            <h3 class="fw-semibold">Orientações acadêmicas</h3>
 
-            <article>
-                <h3>Organize sua rotina</h3>
+            <article class="bg-light p-3 border rounded-3">
+                <h4>Organize sua rotina</h4>
 
                 <p>
                     Consulte sua grade regularmente e reserve um tempo
@@ -185,26 +187,27 @@
                 </p>
             </article>
 
-            <article>
-                <h3>Consulte suas notas e faltas</h3>
+            <article class="bg-light p-3 border rounded-3">
+                <h4>Consulte suas notas e faltas</h4>
 
                 <p>
                     Para acompanhar seu desempenho e sua frequência,
                     acesse as páginas correspondentes:
                 </p>
 
-                <ul>
+                <ul class="link-orientacoes">
                     <li>
-                        <a href="notas.html">Consultar minhas notas</a>
+                        <a class="link-orientacoes" href="notas.html">Consultar minhas notas</a>
                     </li>
                     <li>
-                        <a href="faltas.html">Consultar minhas faltas</a>
+                        <a class="link-orientacoes" href="faltas.html">Consultar minhas faltas</a>
                     </li>
                 </ul>
+
             </article>
 
-            <article>
-                <h3>Precisa de ajuda?</h3>
+            <article class="bg-light p-3 border rounded-3">
+                <h4>Precisa de ajuda?</h4>
 
                 <p>
                     Se tiver dúvidas sobre horários, disciplinas ou
@@ -214,13 +217,14 @@
 
                 <p>
                     Acesse a página
-                    <a href="fale-conosco.html">Fale Conosco</a>
+                    <a class="link-orientacoes" href="fale-conosco.html">Fale Conosco</a>
                     para enviar sua solicitação.
                 </p>
             </article>
         </section>
 
     </main>
+
     <footer class="p-5 pb-3">
 
         <div class="row border-bottom pb-4 justify-content-between">

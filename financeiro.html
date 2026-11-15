@@ -62,10 +62,10 @@
         </div>
     </header>
 
-    <main class="container py-5">
+    <main class="container py-5 px-0">
 
-        <section class="resumo-financeiro">
-            <h2>Resumo financeiro</h2>
+        <section class="resumo-financeiro p-4 pb-2 my-4 border rounded-3">
+            <h3 class="fw-semibold">Resumo financeiro</h3>
 
             <p>
                 Nesta página, você pode consultar suas mensalidades,
@@ -73,8 +73,8 @@
                 realizados e pendentes.
             </p>
 
-            <article>
-                <h3>Organize sua vida financeira</h3>
+            <article class="bg-light p-3 border rounded-3 mb-3">
+                <h4>Organize sua vida financeira</h4>
 
                 <p>
                     Acompanhar os vencimentos ajuda você a manter suas
@@ -84,95 +84,85 @@
             </article>
         </section>
 
-        <section class="mensalidades">
-            <h2>Minhas mensalidades</h2>
+        <section class="mensalidades p-4 pb-2 my-4 border rounded-3">
+            <h2 class="fw-semibold">Minhas mensalidades</h2>
 
             <p>
                 Confira os valores, as datas de vencimento e a situação
                 das mensalidades do semestre.
             </p>
 
-            <table>
-                <caption>Histórico de mensalidades - semestre atual</caption>
-
-                <tr>
-                    <th style="background-color: #800000; color: white; border: 1px solid black; padding: 10px;"
-                        scope="col">Mensalidade</th>
-                    <th style="background-color: #800000; color: white; border: 1px solid black; padding: 10px;"
-                        scope="col">Vencimento</th>
-                    <th style="background-color: #800000; color: white; border: 1px solid black; padding: 10px;"
-                        scope="col">Valor</th>
-                    <th style="background-color: #800000; color: white; border: 1px solid black; padding: 10px;"
-                        scope="col">Data do pagamento</th>
-                    <th style="background-color: #800000; color: white; border: 1px solid black; padding: 10px;"
-                        scope="col">Situação</th>
-                </tr>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Mensalidade</th>
+                        <th scope="col">Vencimento</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Data do pagamento</th>
+                        <th scope="col">Situação</th>
+                    </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <th style="border: 1px solid black; padding: 10px;">Fevereiro</th>
-                        <td style="border: 1px solid black; padding: 10px;">10/02/2026</td>
-                        <td style="border: 1px solid black; padding: 10px;">R$ 850,00</td>
-                        <td style="border: 1px solid black; padding: 10px;">08/02/2026</td>
-                        <td style="border: 1px solid black; padding: 10px;">Pago</td>
+                        <th scope="row">Fevereiro</th>
+                        <td>10/02/2026</td>
+                        <td>R$ 850,00</td>
+                        <td>08/02/2026</td>
+                        <td>Pago</td>
                     </tr>
 
                     <tr>
-                        <th style="border: 1px solid black; padding: 10px;" scope="row">Março</th>
-                        <td style="border: 1px solid black; padding: 10px;">10/03/2026</td>
-                        <td style="border: 1px solid black; padding: 10px;">R$ 850,00</td>
-                        <td style="border: 1px solid black; padding: 10px;">09/03/2026</td>
-                        <td style="border: 1px solid black; padding: 10px;">Pago</td>
+                        <th scope="row">Março</th>
+                        <td>10/03/2026</td>
+                        <td>R$ 850,00</td>
+                        <td>09/03/2026</td>
+                        <td>Pago</td>
                     </tr>
 
                     <tr>
-                        <th style="border: 1px solid black; padding: 10px;" scope="row">Abril</th>
-                        <td style="border: 1px solid black; padding: 10px;">10/04/2026</td>
-                        <td style="border: 1px solid black; padding: 10px;">R$ 850,00</td>
-                        <td style="border: 1px solid black; padding: 10px;">08/04/2026</td>
-                        <td style="border: 1px solid black; padding: 10px;">Pago</td>
+                        <th scope="row">Abril</th>
+                        <td>10/04/2026</td>
+                        <td>R$ 850,00</td>
+                        <td>08/04/2026</td>
+                        <td>Pago</td>
                     </tr>
 
                     <tr>
-                        <th style="border: 1px solid black; padding: 10px;" scope="row">Maio</th>
-                        <td style="border: 1px solid black; padding: 10px;">10/05/2026</td>
-                        <td style="border: 1px solid black; padding: 10px;">R$ 850,00</td>
-                        <td style="border: 1px solid black; padding: 10px;">Não informado</td>
-                        <td style="border: 1px solid black; padding: 10px;">Pendente</td>
+                        <th scope="row">Maio</th>
+                        <td>10/05/2026</td>
+                        <td>R$ 850,00</td>
+                        <td>Não informado</td>
+                        <td>Pendente</td>
                     </tr>
 
                     <tr>
-                        <th style="border: 1px solid black; padding: 10px;" scope="row">Junho</th>
-                        <td style="border: 1px solid black; padding: 10px;">10/06/2026</td>
-                        <td style="border: 1px solid black; padding: 10px;">R$ 850,00</td>
-                        <td style="border: 1px solid black; padding: 10px;">Não informado</td>
-                        <td style="border: 1px solid black; padding: 10px;">Pendente</td>
+                        <th scope="row">Junho</th>
+                        <td>10/06/2026</td>
+                        <td>R$ 850,00</td>
+                        <td>Não informado</td>
+                        <td>Pendente</td>
                     </tr>
                 </tbody>
 
                 <tfoot>
                     <tr>
-                        <td colspan="5" style="background-color: #800000; color: white; padding: 10px;">
+                        <td colspan="5">
                             Os valores e pagamentos são fictícios e servem
                             apenas como exemplo para o projeto acadêmico.
                         </td>
                     </tr>
                 </tfoot>
+                <caption class="text-muted text-center">Histórico de mensalidades - semestre atual</caption>
+
             </table>
         </section>
 
-        <br>
+        <section class="formas-pagamento mt-5 mb-3 p-4 d-flex gap-3 flex-column border rounded-3">
+            <h3 class="fw-semibold">Informações sobre pagamentos</h3>
 
-        <section class="formas-pagamento">
-            <h2>Informações sobre pagamentos</h2>
-
-            <article>
-                <h3>
-
-                    <br>
-                    Como realizar o pagamento?
-                </h3>
+            <article class="bg-light p-3 border rounded-3">
+                <h4>Como realizar o pagamento?</h4>
 
                 <p>
                     Consulte os canais oficiais da instituição para verificar
@@ -181,12 +171,8 @@
                 </p>
             </article>
 
-            <br>
-
-            <article>
-                <h3>
-                    Precisa de ajuda com sua mensalidade?
-                </h3>
+            <article class="bg-light p-3 border rounded-3">
+                <h4>Precisa de ajuda com sua mensalidade?</h4>
 
                 <p>
                     Caso tenha dúvidas sobre valores, vencimentos ou pagamentos,
@@ -196,7 +182,7 @@
 
                 <p>
                     Acesse a página
-                    <a href="fale-conosco.html">Fale Conosco</a>
+                    <a class="link-orientacoes" href="fale-conosco.html">Fale Conosco</a>
                     para enviar sua solicitação.
                 </p>
             </article>
